@@ -2,8 +2,8 @@ name: CI Pipeline to staging/production environment
 on:
   pull_request:
     branches:
-      - staging
-      - main
+      - feature-1
+      - prd
 jobs:
   test:
     runs-on: ubuntu-latest
