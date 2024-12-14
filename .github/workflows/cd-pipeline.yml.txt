@@ -44,7 +44,7 @@ jobs:
         id: docker-auth
         env:
           D_USER: ${{secrets.DOCKER_USER}}
-          D_PASS: ${{secrets.DOCKER_PASSWORD}}
+          D_PASS: ${{secrets.DOCKER_PAT}}
         run: |
           docker login -u $D_USER -p $D_PASS
       - name: Build and tag Image
